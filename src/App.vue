@@ -1,18 +1,17 @@
 <script setup>
-
-import Header from "@/components/Header.vue";
-import Contact from "@/components/Contact.vue";
 import Hero from "@/components/Hero.vue";
+import MainLayout from "@/layout/MainLayout.vue";
+import Service from "@/components/Service.vue";
 import Pricing from "@/components/Pricing.vue";
+import Utilities from "@/components/Utilities.vue";
+
 </script>
 
-    <template>
-      <v-layout class="rounded rounded-md">
-        <Header/>
-        <v-main class="d-flex align-center justify-center" >
-         <Hero/>
-          <Pricing></Pricing>
-        </v-main>
-      <Contact/>
-      </v-layout>
-    </template>
+<template>
+  <MainLayout>
+    <Hero></Hero>
+    <Utilities/>
+    <Service></Service>
+    <Pricing></Pricing>
+  </MainLayout>
+</template>
