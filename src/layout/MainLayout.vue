@@ -4,17 +4,17 @@ import Header from "@/components/Header.vue";
 </script>
 
 <template>
-  <v-layout>
-    <v-app-bar color="primary" prominent>
+  <v-app>
+    <v-app-bar style="background-color: var(--background-color)" prominent>
       <Header/>
     </v-app-bar>
     <v-main>
       <slot></slot>
     </v-main>
-    <!--<v-footer  style="background-color:#FFEEAD">
+    <v-footer >
       <Contact/>
-    </v-footer>-->
-  </v-layout>
+    </v-footer>
+  </v-app>
   
 </template>
 

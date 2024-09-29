@@ -1,5 +1,5 @@
 <script setup>
-
+import URL from "@/assets/img/img-1.jpeg"
 </script>
 
 <template>
@@ -11,7 +11,7 @@
     </v-form>
   </v-col>
   <v-col>
-    <v-img src=""></v-img>
+    <v-img :src="URL" height="400" width="400"></v-img>
   </v-col>
 </v-row>
 </template>

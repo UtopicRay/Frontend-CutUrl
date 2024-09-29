@@ -1,9 +1,8 @@
 <script setup>
-
+import URL from "@/assets/img/img-1.jpeg"
 </script>
 
 <template>
-  <v-container>
     <v-row class="m-auto d-flex justify-center">
       <v-col>
         <h1>
@@ -14,8 +13,7 @@
         </v-btn>
       </v-col>
       <v-col>
-        <v-img src=""/>
+        <v-img :src="URL" width="400" height="400"/>
       </v-col>
     </v-row>
-  </v-container>
 </template>
