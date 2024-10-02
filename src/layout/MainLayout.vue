@@ -4,8 +4,8 @@ import Header from "@/components/Header.vue";
 </script>
 
 <template>
-  <v-app>
-    <v-app-bar style="background-color: var(--background-color)" prominent>
+  <v-app style="background-color: #FFEFBA">
+    <v-app-bar style="background-color: var(--background-color)">
       <Header/>
     </v-app-bar>
     <v-main>

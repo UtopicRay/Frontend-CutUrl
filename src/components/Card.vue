@@ -4,7 +4,7 @@ const props=defineProps({title:String,description:String,icon:String});
 </script>
 
 <template>
-<v-card height="180" width="300" style="background-color: var(--background-color)">
+<v-card class="mx-auto" height="180" width="300" style="background-color: var(--background-color)">
   <v-card-title>
     <div class="d-flex justify-center align-center">
       <v-icon :icon="icon" size="x-large" class="bg-amber-accent-4 pa-7 rounded-circle"/>

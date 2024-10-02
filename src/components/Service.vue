@@ -1,12 +1,12 @@
 <script setup>
-import URL from "@/assets/img/img-1.jpeg"
+import URL from "@/assets/img/url-2.png"
 </script>
 
 <template>
 <v-row>
-  <v-col>
-    <v-form>
-      <v-text-field placeholder="Introduce your URL" required></v-text-field>
+  <v-col class="d-flex justify-center  align-center">
+    <v-form class="d-flex flex-column justify-start">
+      <v-text-field placeholder="Introduce your URL" required ></v-text-field>
       <v-btn @click="">Get your url</v-btn>
     </v-form>
   </v-col>

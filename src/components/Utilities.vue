@@ -20,8 +20,8 @@ const items=ref<Array<Utilities>>([{
 </script>
 
 <template>
-  <v-row class=" d-flex justify-center mx-auto w-100" style="background-color: var(--background-color-2)">
-    <v-col v-for="item in items" :key="item.title" cols="4">
+  <v-row class="d-flex justify-center align-center mx-auto w-100" style="background-color: var(--background-color-2)">
+    <v-col v-for="item in items" :key="item.title" cols="12" md="4">
       <Card :title="item.title" :description="item.description" :icon="item.image"></Card>
     </v-col>
   </v-row>
