@@ -1,43 +1,30 @@
 <template>
-    <v-card flat tile class="text-black py-12 px-5" width="100%" style="background-color:#FFEEAD">
-      <v-row>
-        <v-col cols="12" sm="6" md="4" class="pa-16">
-          <div class="text-center">
-            <p class="font-weight-bold text-h6">VueCommerce</p>
-          </div>
-        </v-col>
-        <v-col cols="12" sm="6" md="2">
-          <v-card-text class="pt-0">
-            <h3>About</h3>
-          </v-card-text>
-          <v-card-text class="text-gray">How it Work</v-card-text>
-          <v-card-text class="text-gray">Our Programs</v-card-text>
-          <v-card-text class="text-gray">Promotion</v-card-text>
-          <v-card-text class="text-gray">Refer a Friend</v-card-text>
-        </v-col>
-        <v-col cols="12" sm="6" md="2">
-          <v-card-text class="pt-0">
-            <h3>Dellvery</h3>
-          </v-card-text>
-          <v-card-text> Cost on Delevery</v-card-text>
-          <v-card-text class="mt-n4"> Payment Method</v-card-text>
-          <v-card-text class="mt-n4"> Delevery Astus</v-card-text>
-          <v-card-text class="mt-n4"> Returns</v-card-text>
-        </v-col>
-        <v-col cols="12" sm="6" md="4">
-          <v-card-text class="white--text pt-0">
-            <h3>Contact</h3>
-          </v-card-text>
-          <v-card-text> Ray Rendon</v-card-text>
-          <v-card-text class="mt-n4">
-            <a href="mailto:rayrm2021@gmail.com?subject=Interesado%20en%20sus%20servicios">
-              rayrm2021@gmail.com
-            </a>
-          </v-card-text>
-          <v-card-text class="mt-n4"><a href="https://wa.me/+5358294125">+5358294125</a></v-card-text>
-        </v-col>
-      </v-row>
-    </v-card>
+  <v-footer border>
+    <div>
+      <h2 class="text-gray-300 ">Ray Rendon</h2>
+      <div class="flex gap-2">
+        <a href="https://www.linkedin.com/in/ray-rendon-mesa-1948b7260">
+          <v-icon icon="mdi mdi-linkedin" class="text-white text-4xl hover:scale-125 transition-all duration-200 size-10"></v-icon>
+        </a>
+        <a href="https://github.com/UtopicRay">
+          <v-icon icon="mdi mdi-github" class="text-white text-4xl hover:scale-125 transition-all duration-200 size-10"></v-icon>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="flex items-center">
+        <a
+            class="flex justify-center items-center text-white  hover:scale-110 transition-all duration-200  underline"
+            href="mailto:rayrm2021@gmail.com?subject=Interesado%20en%20sus%20servicios"
+        >
+          rayrm2021@gmail.com
+          <span>
+              <v-icon icon="mdi mdi-email" class="text-gray-500 text-4xl mx-2"></v-icon>
+            </span>
+        </a>
+      </div>
+    </div>
+  </v-footer>
 </template>
 
 <script setup>

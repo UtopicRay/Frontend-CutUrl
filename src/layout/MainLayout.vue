@@ -11,9 +11,7 @@ import Header from "@/components/Header.vue";
     <v-main>
       <slot></slot>
     </v-main>
-    <v-footer >
-      <Contact/>
-    </v-footer>
+     <Contact/>
   </v-app>
   
 </template>
