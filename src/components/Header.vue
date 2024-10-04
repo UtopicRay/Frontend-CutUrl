@@ -6,15 +6,15 @@ const group=ref(null);
 const items=ref([
   {
     title: 'Service',
-    value: 'service',
+    value: '#service',
   },
   {
-    title: 'Pricing',
-    value: 'pricing',
+    title: 'QR service',
+    value: '#qr',
   },
   {
     title: 'Contact',
-    value: 'Contact',
+    value: '#contact',
   },
 ])
 watch(group,()=>drawer.value=false);
@@ -24,7 +24,9 @@ watch(group,()=>drawer.value=false);
     <v-toolbar-title>CutUrl</v-toolbar-title>
     <v-spacer></v-spacer>
     <template v-if="$vuetify.display.mdAndUp" v-for="item in items">
-      <v-btn>{{ item.value }}</v-btn>
+      <v-btn :href='item.value'>
+        {{ item.title }}
+      </v-btn>
     </template>
     <div v-else>
       <v-btn icon="mdi-dots-vertical" variant="text"></v-btn>
