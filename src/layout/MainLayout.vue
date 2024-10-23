@@ -4,7 +4,7 @@ import Header from "@/components/Header.vue";
 </script>
 
 <template>
-  <v-app style="background-color: #FFEFBA">
+  <v-app style="background-color: #FFEFBA" id="service">
     <v-app-bar style="background-color: var(--background-color)">
       <Header/>
     </v-app-bar>
