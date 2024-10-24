@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import URL from "@/assets/img/url-1.png";
 import {useService} from "@/hook/useService.ts";
-import {toRef} from "vue";
 import Loader from "@/components/Loader.vue";
-const url=toRef<String>('');
+import Form from "@/components/Form.vue";
 const {loading,error,results,shortUrl}=useService();
 if (error){
   console.log(error);
@@ -31,10 +30,7 @@ if (error){
       </v-col>
     </v-row>
     <v-row class="mt-3">
-      <v-form class="d-flex  justify-center w-100 align-center position-relative" @submit.prevent>
-        <v-text-field placeholder="Introduce your URL" required variant="outlined" v-model="url"></v-text-field>
-        <v-btn class="position-absolute right-0 top-0 mt-2  mx-2" @click="shortUrl(url)">Get your url</v-btn>
-      </v-form>
+      <Form width="100" variant="outlined" :handle-click="shortUrl"></Form>
       <div class="w-100 mx-auto d-flex justify-center align-center" v-if="loading">
         <Loader/>
       </div>
