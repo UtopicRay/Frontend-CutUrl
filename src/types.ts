@@ -10,13 +10,17 @@ export type Utilities={
 // match the expected interface, even if the JSON is valid.
 
 export type Url_api = {
-    success: boolean;
+    success?: boolean;
     error?: string;
     data?:    Data;
+    image?: string;
 }
-
+export type UrlList={
+    originalUrl: string;
+    shortedUrl: string;
+}
 export type Data = {
-    originalUrl:       string;
+    originalUrl: string;
     shortedUrl: string;
     createdAt: CreatedAt;
 }
