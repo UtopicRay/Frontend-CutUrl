@@ -26,7 +26,7 @@ if (error){
         </div>
       </v-col>
       <v-col>
-        <v-img :src="URL" width="400" height="400"/>
+        <v-img class="mx-auto" :src="URL" width="400" height="400"/>
       </v-col>
     </v-row>
     <v-row class="mt-3">
