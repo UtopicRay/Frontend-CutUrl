@@ -30,7 +30,7 @@ if (error){
       </v-col>
     </v-row>
     <v-row class="mt-3">
-      <Form width="100" variant="outlined" :handle-click="shortUrl"></Form>
+      <Form width="100" variant="outlined" :handle-click="shortUrl" title="Get your URL"></Form>
       <div class="w-100 mx-auto d-flex justify-center align-center" v-if="loading">
         <Loader/>
       </div>
